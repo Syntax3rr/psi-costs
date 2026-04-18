@@ -1,0 +1,13 @@
+{
+  "itemGroup.psicosts": "Example Mod Tab",
+  "block.psicosts.example_block": "Example Block",
+  "item.psicosts.example_item": "Example Item",
+
+  "psicosts.configuration.title": "Psi Costs Configs",
+  "psicosts.configuration.section.psicosts.common.toml": "Psi Costs Configs",
+  "psicosts.configuration.section.psicosts.common.toml.title": "Psi Costs Configs",
+  "psicosts.configuration.items": "Item List",
+  "psicosts.configuration.logDirtBlock": "Log Dirt Block",
+  "psicosts.configuration.magicNumberIntroduction": "Magic Number Text",
+  "psicosts.configuration.magicNumber": "Magic Number"
+}
