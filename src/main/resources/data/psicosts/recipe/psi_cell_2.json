@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MAM",
+    "MCM",
+    "MBM"
+  ],
+  "key": {
+    "M": { "item": "psi:psimetal" },
+    "A": { "item": "minecraft:emerald" },
+    "B": { "item": "minecraft:redstone" },
+    "C": { "item": "psicosts:psi_cell_1" }
+  },
+  "result": {
+    "id": "psicosts:psi_cell_2"
+  }
+}

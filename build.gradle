@@ -2,6 +2,7 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.141'
+    id "org.jetbrains.kotlin.jvm" version ("2.0.21")
     id 'idea'
 }
 
@@ -27,7 +28,12 @@ sourceSets.main.resources {
 }
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
+    mavenLocal()
+    maven {
+        name = "Kotlin for Forge"
+        setUrl("https://thedarkcolour.github.io/KotlinForForge/")
+    }
+    flatDir { dirs 'libs' }
 }
 
 base {
@@ -118,6 +124,12 @@ configurations {
 }
 
 dependencies {
+    implementation("thedarkcolour:kotlinforforge-neoforge:$kff_version")
+
+    // Place Psi-${psi_version}.jar in libs/ to compile. See gradle.properties for download link.
+    compileOnly(fileTree(dir: 'libs', include: "Psi-${psi_version}.jar"))
+    localRuntime(fileTree(dir: 'libs', include: "Psi-${psi_version}.jar"))
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -148,11 +160,15 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
+            neo_version_range      : neo_version_range,
+            kff_version            : kff_version,
+            kff_version_range      : kff_version_range,
             loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
             mod_license            : mod_license,
             mod_version            : mod_version,
+            mod_authors            : mod_authors,
     ]
     inputs.properties replaceProperties
     expand replaceProperties

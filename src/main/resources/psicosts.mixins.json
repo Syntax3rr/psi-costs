@@ -2,7 +2,10 @@
   "required": true,
   "package": "com.nullpt3r.psicosts.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "MixinItemCAD",
+    "MixinPlayerData"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

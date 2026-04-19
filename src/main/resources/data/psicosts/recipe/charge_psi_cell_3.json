@@ -1,0 +1,17 @@
+{
+  "type": "ars_nouveau:imbuement",
+  "input": {
+    "type": "psicosts:uncharged_cell",
+    "item": "psicosts:psi_cell_3"
+  },
+  "output": {
+    "id": "psicosts:psi_cell_3",
+    "components": {
+      "minecraft:custom_data": { "PsioCharge": 720000 }
+    }
+  },
+  "source": 900000,
+  "pedestalItems": [
+    { "item": "psi:psigem" }
+  ]
+}

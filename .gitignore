@@ -12,6 +12,8 @@ build/
 out/
 !**/src/**/out/
 
+.kotlin/
+
 .run/
 
 ### Eclipse ###
@@ -31,6 +33,15 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Local dependency JARs (place downloaded mod jars here for compilation) ###
+libs/*.jar
+
+### Third-party mod class extracts ###
+vazkii/
+
+### Third-party extracted class files (obtained from mod jars locally) ###
+vazkii/
 
 ### Minecraft Modding ###
 run/

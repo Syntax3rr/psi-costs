@@ -1,13 +1,29 @@
 {
-  "itemGroup.psicosts": "Example Mod Tab",
-  "block.psicosts.example_block": "Example Block",
-  "item.psicosts.example_item": "Example Item",
+  "itemGroup.psicosts": "Psi Costs",
+  "item.psicosts.psi_cell_1": "PSI Cell",
+  "item.psicosts.psi_cell_2": "PSI-O Cell",
+  "item.psicosts.psi_cell_3": "PSI-Dyne Cell",
+  "item.psicosts.psi_cell_4": "PSI-Force Cell",
 
-  "psicosts.configuration.title": "Psi Costs Configs",
-  "psicosts.configuration.section.psicosts.common.toml": "Psi Costs Configs",
-  "psicosts.configuration.section.psicosts.common.toml.title": "Psi Costs Configs",
-  "psicosts.configuration.items": "Item List",
-  "psicosts.configuration.logDirtBlock": "Log Dirt Block",
-  "psicosts.configuration.magicNumberIntroduction": "Magic Number Text",
-  "psicosts.configuration.magicNumber": "Magic Number"
+  "item.psicosts.unstable_cell": "Unstable PSI Cell",
+  "item.psicosts.unstable_cell.tooltip": "Single-use. Unstable cells can be drawn from directly, so they can bypass one's natural PSI limit.",
+
+  "item.psicosts.creative_cell": "Star of PSI",
+  "item.psicosts.creative_cell.tooltip": "Provides infinite psionic energy.",
+
+  "item.psicosts.psi_cell.stored": "%s / %s PSI",
+  "item.psicosts.psi_cell.tooltip": "Stores psionic energy.",
+
+  "psicosts.configuration.title": "Psi Costs Config",
+  "psicosts.configuration.section.psicosts.common.toml": "Psi Costs Config",
+  "psicosts.configuration.section.psicosts.common.toml.title": "Psi Costs Config",
+  "psicosts.configuration.costMultiplier": "Spell Cost Multiplier",
+  "psicosts.configuration.xpConversion.enabled": "XP Conversion Enabled",
+  "psicosts.configuration.xpConversion.ratio": "XP Conversion Ratio",
+  "psicosts.configuration.xpConversion.multiplier": "XP to PSI Multiplier",
+  "psicosts.configuration.unstableCell.capacity": "Unstable Cell Capacity",
+  "psicosts.configuration.cellCapacities.tier1": "PSI Cell Capacity",
+  "psicosts.configuration.cellCapacities.tier2": "PSI-O Cell Capacity",
+  "psicosts.configuration.cellCapacities.tier3": "PSI-Dyne Cell Capacity",
+  "psicosts.configuration.cellCapacities.tier4": "PSI-Force Cell Capacity"
 }

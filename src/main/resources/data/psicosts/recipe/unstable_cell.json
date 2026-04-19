@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GLG",
+    "DED",
+    "GMG"
+  ],
+  "key": {
+    "G": { "item": "minecraft:glass" },
+    "D": { "item": "psi:psidust" },
+    "L": { "item": "minecraft:glowstone_dust" },
+    "E": { "item": "minecraft:ender_pearl" },
+    "M": { "item": "psi:psimetal" }
+  },
+  "result": {
+    "id": "psicosts:unstable_cell",
+    "count": 1
+  }
+}

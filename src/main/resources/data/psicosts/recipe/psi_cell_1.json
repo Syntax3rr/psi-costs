@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "DGD",
+    "IGI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "G": { "item": "minecraft:glass" },
+    "D": { "item": "psi:psidust" }
+  },
+  "result": {
+    "id": "psicosts:psi_cell_1"
+  }
+}

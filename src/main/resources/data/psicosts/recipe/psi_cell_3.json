@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FAF",
+    "GCG",
+    "FBF"
+  ],
+  "key": {
+    "F": { "item": "psi:psimetal" },
+    "A": { "item": "minecraft:ghast_tear" },
+    "B": { "item": "minecraft:glowstone_dust" },
+    "G": { "item": "psi:psigem" },
+    "C": { "item": "psicosts:psi_cell_2" }
+  },
+  "result": {
+    "id": "psicosts:psi_cell_3"
+  }
+}
