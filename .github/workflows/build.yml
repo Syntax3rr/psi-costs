@@ -26,5 +26,8 @@ jobs:
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
 
+      - name: Download Psi dependency
+        run: mkdir -p libs && curl -L -o libs/Psi-1.21.1-108.jar https://cdn.modrinth.com/data/pOeA0exL/versions/dUM55Jd9/Psi-1.21.1-108.jar
+
       - name: Build with Gradle
         run: ./gradlew build
