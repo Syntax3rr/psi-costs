@@ -20,7 +20,7 @@ object PsiRegenHandler {
     @SubscribeEvent
     fun onPsiRegen(event: RegenPsiEvent) {
         val player = event.player
-        if (player.isCreative || event.regenCooldown > 0) return
+        if (event.regenCooldown > 0) return
 
         val toRegen = event.playerRegen.takeIf { it > 0 } ?: return
 
