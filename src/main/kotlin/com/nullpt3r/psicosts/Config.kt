@@ -12,6 +12,15 @@ object Config {
         )
         .defineInRange("costMultiplier", 1.0, 0.0, 100.0)
 
+    val MAX_CELLS: ModConfigSpec.IntValue = BUILDER
+        .comment(
+            "Maximum number of PSI cells allowed in your inventory.",
+            "If you exceed this limit, regeneration is blocked until you remove the excess.",
+            "Unstable cells do not count toward this limit.",
+            "Set to 0 to disable the limit."
+        )
+        .defineInRange("maxCells", 0, 0, Int.MAX_VALUE)
+
     var XP_CONVERSION_ENABLED: ModConfigSpec.BooleanValue
     var XP_CONVERSION_RATIO: ModConfigSpec.DoubleValue
     var XP_CONVERSION_MULTIPLIER: ModConfigSpec.DoubleValue

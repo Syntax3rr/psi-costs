@@ -5,6 +5,7 @@ import com.nullpt3r.psicosts.PsiCosts
 import com.nullpt3r.psicosts.item.CreativeCellItem
 import com.nullpt3r.psicosts.item.EnvPsiStorage
 import com.nullpt3r.psicosts.item.PsiCellItem
+import net.minecraft.network.chat.Component
 import net.neoforged.bus.api.SubscribeEvent
 import net.neoforged.neoforge.event.entity.player.PlayerXpEvent
 import vazkii.psi.api.cad.RegenPsiEvent
@@ -28,6 +29,19 @@ object PsiRegenHandler {
         for (slot in 0 until inv.containerSize) {
             if (inv.getItem(slot).item is CreativeCellItem) {
                 event.maxPlayerRegen = toRegen
+                return
+            }
+        }
+
+        val maxCells = Config.MAX_CELLS.asInt
+        if (maxCells > 0) {
+            val cellCount = (0 until inv.containerSize).count { inv.getItem(it).item is PsiCellItem }
+            if (cellCount > maxCells) {
+                event.maxPlayerRegen = 0
+                event.regenCooldown = 100
+                if (!player.level().isClientSide) {
+                    player.sendSystemMessage(Component.translatable("psicosts.max_cells", maxCells))
+                }
                 return
             }
         }

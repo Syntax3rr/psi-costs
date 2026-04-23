@@ -14,10 +14,13 @@
   "item.psicosts.psi_cell.stored": "%s / %s PSI",
   "item.psicosts.psi_cell.tooltip": "Stores psionic energy.",
 
+  "psicosts.max_cells": "The resonance between your PSI cells is disrupting your recovery. You can only carry %s at a time.",
+
   "psicosts.configuration.title": "Psi Costs Config",
   "psicosts.configuration.section.psicosts.common.toml": "Psi Costs Config",
   "psicosts.configuration.section.psicosts.common.toml.title": "Psi Costs Config",
   "psicosts.configuration.costMultiplier": "Spell Cost Multiplier",
+  "psicosts.configuration.maxCells": "Max PSI Cells",
   "psicosts.configuration.xpConversion.enabled": "XP Conversion Enabled",
   "psicosts.configuration.xpConversion.ratio": "XP Conversion Ratio",
   "psicosts.configuration.xpConversion.multiplier": "XP to PSI Multiplier",
